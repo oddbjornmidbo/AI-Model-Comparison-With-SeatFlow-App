@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatFlow.Api", "backend/SeatFlow.Api/SeatFlow.Api.csproj", "{72C44AC3-322D-4474-BA52-F18A71C1B9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatFlow.Tests", "backend/SeatFlow.Tests/SeatFlow.Tests.csproj", "{EA5B2C33-2631-49B4-8549-DC1D6C61C7B2}"
+EndProject
+Global
+  GlobalSection(SolutionConfigurationPlatforms) = preSolution
+    Debug|Any CPU = Debug|Any CPU
+    Release|Any CPU = Release|Any CPU
+  EndGlobalSection
+  GlobalSection(ProjectConfigurationPlatforms) = postSolution
+    {72C44AC3-322D-4474-BA52-F18A71C1B9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {72C44AC3-322D-4474-BA52-F18A71C1B9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {72C44AC3-322D-4474-BA52-F18A71C1B9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {72C44AC3-322D-4474-BA52-F18A71C1B9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+    {EA5B2C33-2631-49B4-8549-DC1D6C61C7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {EA5B2C33-2631-49B4-8549-DC1D6C61C7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {EA5B2C33-2631-49B4-8549-DC1D6C61C7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {EA5B2C33-2631-49B4-8549-DC1D6C61C7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+  EndGlobalSection
+EndGlobal

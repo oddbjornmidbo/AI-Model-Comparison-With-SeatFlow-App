@@ -1,0 +1,16 @@
+node_modules/
+dist/
+storybook-static/
+bin/
+obj/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+test-results/
+playwright-report/
+.DS_Store
+*.log
+*.tsbuildinfo

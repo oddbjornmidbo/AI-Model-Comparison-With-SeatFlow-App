@@ -96,7 +96,7 @@ Create a simple UI where I can:
 - see a participant's schedule
 - clearly distinguish Confirmed, Waitlisted, and Cancelled states
 
-The UI does not need to be beautiful, but it must work.
+The UI does not need to be fancy, but it must work and be professional, intuitive to use and use modern design standards.
 
 The UI should be responsive and follow basic Universal Design/accessibility principles, including keyboard usability, labelled controls, readable contrast, and mobile reflow.
 
@@ -174,3 +174,5 @@ Do not spend time on:
 Stop once the requirements are implemented and the relevant builds/tests pass.
 
 Keep your commentary concise while working. Spend tokens primarily on implementation and verification rather than explaining every action.
+
+Stop work if remaining monthly usage drops below $6

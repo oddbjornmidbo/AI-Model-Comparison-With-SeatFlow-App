@@ -12,7 +12,7 @@ builder.Services.ConfigureHttpJsonOptions(options => options.SerializerOptions.C
 builder.Services.AddSingleton<INotificationService, DevelopmentNotificationService>();
 builder.Services.AddSingleton<RegistrationService>();
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy
-    .WithOrigins("http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8200", "http://127.0.0.1:8200")
+    .WithOrigins("http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8200", "http://127.0.0.1:8200", "http://localhost:8201", "http://127.0.0.1:8201")
     .AllowAnyHeader().AllowAnyMethod()));
 
 var app = builder.Build();

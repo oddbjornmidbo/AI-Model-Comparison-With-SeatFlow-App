@@ -1,0 +1,10 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
+import { EmptyState } from './Feedback';
+const meta = { title: 'Feedback/Empty state', component: EmptyState, tags: ['autodocs'], args: { title: 'Make room for your first workshop', description: 'Create a session to get your conference started.' } } satisfies Meta<typeof EmptyState>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const EmptyCatalog: Story = { args: { action: <button type="button" className="button button-primary" onClick={fn()}>Create a workshop</button> } };
+export const NoMatches: Story = { args: { title: 'No matching workshops', description: 'Try another title or change the availability filter.', compact: true } };
+export const EmptyRoster: Story = { args: { title: 'The first seat is waiting', description: 'Register a participant to get things started.', compact: true } };
+export const Mobile: Story = { parameters: { viewport: { defaultViewport: 'mobile1' } } };

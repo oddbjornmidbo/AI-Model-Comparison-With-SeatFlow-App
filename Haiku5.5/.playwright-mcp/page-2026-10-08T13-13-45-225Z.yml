@@ -1,0 +1,105 @@
+- main [ref=e3]:
+  - heading "SeatFlow" [level=1] [ref=e4]
+  - paragraph [ref=e5]: Workshop registrations for the conference.
+  - generic [ref=e6]:
+    - heading "Workshops" [level=2] [ref=e7]
+    - table [ref=e8]:
+      - rowgroup [ref=e9]:
+        - row [ref=e10]:
+          - columnheader "Title" [ref=e11]
+          - columnheader "Starts" [ref=e12]
+          - columnheader "Ends" [ref=e13]
+          - columnheader "Capacity" [ref=e14]
+          - columnheader "Remaining" [ref=e15]
+          - columnheader "Waitlist" [ref=e16]
+          - columnheader [ref=e17]
+      - rowgroup [ref=e22]:
+        - row [ref=e23]:
+          - cell "EF Core Deep Dive" [ref=e24]
+          - cell "10. nov. 2026, 10:00" [ref=e25]
+          - cell "10. nov. 2026, 13:00" [ref=e26]
+          - cell "2" [ref=e27]
+          - cell "1" [ref=e28]
+          - cell "0" [ref=e29]
+          - cell [ref=e30]:
+            - button "Select" [ref=e31] [cursor=pointer]
+        - row [ref=e32]:
+          - cell "Intro to React" [ref=e33]
+          - cell "10. nov. 2026, 12:00" [ref=e34]
+          - cell "10. nov. 2026, 14:00" [ref=e35]
+          - cell "3" [ref=e36]
+          - cell "3" [ref=e37]
+          - cell "0" [ref=e38]
+          - cell [ref=e39]:
+            - button "Select" [ref=e40] [cursor=pointer]
+        - row [ref=e84]:
+          - cell "Domain-Driven Design" [ref=e42]
+          - cell "10. nov. 2026, 15:00" [ref=e43]
+          - cell "10. nov. 2026, 17:00" [ref=e44]
+          - cell "1" [ref=e45]
+          - cell "0" [ref=e85]
+          - cell "0" [ref=e47]
+          - cell [ref=e69]:
+            - button "Selected" [ref=e70] [cursor=pointer]
+        - row [ref=e50]:
+          - cell "Testing in .NET" [ref=e51]
+          - cell "11. nov. 2026, 10:00" [ref=e52]
+          - cell "11. nov. 2026, 11:30" [ref=e53]
+          - cell "2" [ref=e54]
+          - cell "2" [ref=e55]
+          - cell "0" [ref=e56]
+          - cell [ref=e57]:
+            - button "Select" [ref=e58] [cursor=pointer]
+        - row [ref=e59]:
+          - cell "Accessible Frontend" [ref=e60]
+          - cell "11. nov. 2026, 11:00" [ref=e61]
+          - cell "11. nov. 2026, 12:00" [ref=e62]
+          - cell "10" [ref=e63]
+          - cell "10" [ref=e64]
+          - cell "0" [ref=e65]
+          - cell [ref=e66]:
+            - button "Select" [ref=e67] [cursor=pointer]
+  - generic [ref=e71]:
+    - heading "Domain-Driven Design" [level=2] [ref=e72]
+    - paragraph [ref=e73]: 10. nov. 2026, 15:00 – 10. nov. 2026, 17:00 · 0 of 1 seats left
+    - generic [ref=e74]:
+      - combobox "Participant to register" [ref=e75]:
+        - option "Choose participant…" [selected]
+        - option "Ada Lovelace"
+        - option "Bjørn Hansen"
+        - option "Cecilia Berg"
+        - option "Eva Nilsen"
+        - option "Frank Olsen"
+      - button "Register" [disabled] [ref=e76]
+    - heading "Confirmed (1)" [level=3] [ref=e86]
+    - table [ref=e87]:
+      - rowgroup [ref=e88]:
+        - row [ref=e89]:
+          - columnheader "Participant" [ref=e90]
+          - columnheader "Email" [ref=e91]
+          - columnheader "Registered" [ref=e92]
+          - columnheader "Status" [ref=e93]
+          - columnheader [ref=e94]
+      - rowgroup [ref=e95]:
+        - row [ref=e96]:
+          - cell "Dag Solberg" [ref=e97]
+          - cell "dag@example.com" [ref=e98]
+          - cell "8. okt. 2026, 15:13" [ref=e99]
+          - cell "Confirmed" [ref=e100]
+          - cell [ref=e102]:
+            - button "Cancel" [ref=e103] [cursor=pointer]
+    - heading "Waitlist (0)" [level=3] [ref=e79]
+    - paragraph [ref=e80]: Promoted first-in, first-out when a seat is freed (skipping anyone with a schedule conflict).
+    - paragraph [ref=e81]: None.
+    - heading "Cancelled (0)" [level=3] [ref=e82]
+    - paragraph [ref=e83]: None.
+  - generic [ref=e18]:
+    - heading "Participant schedule" [level=2] [ref=e19]
+    - combobox "Participant schedule" [ref=e21]:
+      - option "Choose participant…" [selected]
+      - option "Ada Lovelace"
+      - option "Bjørn Hansen"
+      - option "Cecilia Berg"
+      - option "Dag Solberg"
+      - option "Eva Nilsen"
+      - option "Frank Olsen"

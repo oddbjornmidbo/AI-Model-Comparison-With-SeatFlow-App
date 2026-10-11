@@ -1,0 +1,20 @@
+- main [ref=e3]:
+  - heading "SeatFlow" [level=1] [ref=e4]
+  - paragraph [ref=e5]: Workshop registrations for the conference.
+  - generic [ref=e6]:
+    - heading "Workshops" [level=2] [ref=e7]
+    - table [ref=e8]:
+      - rowgroup [ref=e9]:
+        - row [ref=e10]:
+          - columnheader "Title" [ref=e11]
+          - columnheader "Starts" [ref=e12]
+          - columnheader "Ends" [ref=e13]
+          - columnheader "Capacity" [ref=e14]
+          - columnheader "Remaining" [ref=e15]
+          - columnheader "Waitlist" [ref=e16]
+          - columnheader [ref=e17]
+      - rowgroup
+  - generic [ref=e18]:
+    - heading "Participant schedule" [level=2] [ref=e19]
+    - combobox "Participant schedule" [ref=e21]:
+      - option "Choose participant…" [selected]

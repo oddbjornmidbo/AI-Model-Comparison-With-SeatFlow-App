@@ -1,0 +1,122 @@
+- main [ref=f1e3]:
+  - heading "SeatFlow" [level=1] [ref=f1e4]
+  - generic [ref=f1e113]: Cancelled Alice Hansen's registration for "Testing Asynchronous Code".
+  - generic [ref=f1e5]:
+    - heading "Workshops" [level=2] [ref=f1e6]
+    - table [ref=f1e7]:
+      - rowgroup [ref=f1e8]:
+        - row [ref=f1e9]:
+          - columnheader "Title" [ref=f1e10]
+          - columnheader "When (UTC)" [ref=f1e11]
+          - columnheader "Capacity" [ref=f1e12]
+          - columnheader "Confirmed" [ref=f1e13]
+          - columnheader "Waitlisted" [ref=f1e14]
+          - columnheader "Remaining" [ref=f1e15]
+          - columnheader [ref=f1e16]
+      - rowgroup [ref=f1e21]:
+        - row [ref=f1e22]:
+          - cell "Domain-Driven Design in Practice" [ref=f1e23]
+          - cell "10 Nov 2026, 09:00 – 11:00" [ref=f1e24]
+          - cell "2" [ref=f1e25]
+          - cell "2" [ref=f1e26]
+          - cell "1" [ref=f1e27]
+          - cell "0" [ref=f1e28]
+          - cell [ref=f1e29]:
+            - button "Select" [ref=f1e30] [cursor=pointer]
+        - row [ref=f1e31]:
+          - cell "Event Sourcing Fundamentals" [ref=f1e32]
+          - cell "10 Nov 2026, 10:00 – 12:00" [ref=f1e33]
+          - cell "2" [ref=f1e34]
+          - cell "1" [ref=f1e35]
+          - cell "0" [ref=f1e36]
+          - cell "1" [ref=f1e37]
+          - cell [ref=f1e38]:
+            - button "Select" [ref=f1e39] [cursor=pointer]
+        - row [ref=f1e114]:
+          - cell "Testing Asynchronous Code" [ref=f1e41]
+          - cell "10 Nov 2026, 11:30 – 13:00" [ref=f1e42]
+          - cell "1" [ref=f1e43]
+          - cell "1" [ref=f1e44]
+          - cell "0" [ref=f1e115]
+          - cell "0" [ref=f1e46]
+          - cell [ref=f1e47]:
+            - button "Select" [ref=f1e48] [cursor=pointer]
+        - row [ref=f1e49]:
+          - cell "Accessible Frontends" [ref=f1e50]
+          - cell "10 Nov 2026, 13:00 – 15:00" [ref=f1e51]
+          - cell "3" [ref=f1e52]
+          - cell "0" [ref=f1e53]
+          - cell "0" [ref=f1e54]
+          - cell "3" [ref=f1e55]
+          - cell [ref=f1e56]:
+            - button "Select" [ref=f1e57] [cursor=pointer]
+        - row [ref=f1e58]:
+          - cell "Lightning Talks" [ref=f1e59]
+          - cell "10 Nov 2026, 15:00 – 16:00" [ref=f1e60]
+          - cell "10" [ref=f1e61]
+          - cell "0" [ref=f1e62]
+          - cell "0" [ref=f1e63]
+          - cell "10" [ref=f1e64]
+          - cell [ref=f1e65]:
+            - button "Select" [ref=f1e66] [cursor=pointer]
+  - generic [ref=f1e67]:
+    - heading "Testing Asynchronous Code" [level=2] [ref=f1e68]
+    - generic [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - text: Participant
+        - combobox "Participant" [ref=f1e71]:
+          - option "Choose…" [selected]
+          - option "Alice Hansen"
+          - option "Bjørn Olsen"
+          - option "Chen Wei"
+          - option "Dana Berg"
+          - option "Erik Lund"
+          - option "Fatima Yusuf"
+      - button "Register" [disabled] [ref=f1e72]
+    - heading "Confirmed (1)" [level=3] [ref=f1e73]
+    - table [ref=f1e74]:
+      - rowgroup [ref=f1e75]:
+        - row [ref=f1e76]:
+          - columnheader "Participant" [ref=f1e77]
+          - columnheader "Email" [ref=f1e78]
+          - columnheader "Status" [ref=f1e79]
+          - columnheader "Registered (UTC)" [ref=f1e80]
+          - columnheader [ref=f1e81]
+      - rowgroup [ref=f1e82]:
+        - row [ref=f1e116]:
+          - cell "Bjørn Olsen" [ref=f1e117]
+          - cell "bjorn@example.com" [ref=f1e118]
+          - cell "Confirmed" [ref=f1e119]
+          - cell "8 Oct 2026, 13:38" [ref=f1e121]
+          - cell [ref=f1e122]:
+            - button "Cancel" [ref=f1e123] [cursor=pointer]
+    - heading "Waitlist, FIFO (0)" [level=3] [ref=f1e124]
+    - paragraph [ref=f1e125]: None.
+    - heading "Cancelled (1)" [level=3] [ref=f1e126]
+    - table [ref=f1e127]:
+      - rowgroup [ref=f1e128]:
+        - row [ref=f1e129]:
+          - columnheader "Participant" [ref=f1e130]
+          - columnheader "Email" [ref=f1e131]
+          - columnheader "Status" [ref=f1e132]
+          - columnheader "Registered (UTC)" [ref=f1e133]
+          - columnheader [ref=f1e134]
+      - rowgroup [ref=f1e135]:
+        - row [ref=f1e136]:
+          - cell "Alice Hansen" [ref=f1e137]
+          - cell "alice@example.com" [ref=f1e138]
+          - cell "Cancelled" [ref=f1e139]
+          - cell "8 Oct 2026, 13:38" [ref=f1e141]
+          - cell [ref=f1e142]
+  - generic [ref=f1e17]:
+    - heading "Participant schedule" [level=2] [ref=f1e18]
+    - generic [ref=f1e19]:
+      - text: Participant
+      - combobox "Participant" [ref=f1e20]:
+        - option "Choose…" [selected]
+        - option "Alice Hansen"
+        - option "Bjørn Olsen"
+        - option "Chen Wei"
+        - option "Dana Berg"
+        - option "Erik Lund"
+        - option "Fatima Yusuf"
