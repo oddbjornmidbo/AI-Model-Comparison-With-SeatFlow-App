@@ -1,0 +1,526 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  color: white;
+}
+
+.tab.active {
+  color: white;
+  border-bottom-color: #3498db;
+}
+
+.error-banner {
+  background: #e74c3c;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.success-message {
+  background: #27ae60;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.error-message {
+  background: #e74c3c;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Workshops List */
+.workshops-view {
+  width: 100%;
+}
+
+.workshops-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.workshop-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.workshop-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.workshop-card h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.workshop-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.availability {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #ecf0f1;
+}
+
+.workshop-card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.workshop-card button:hover {
+  background: #2980b9;
+}
+
+/* Workshop Detail */
+.workshop-detail {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #7f8c8d;
+}
+
+.detail-header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 20px;
+}
+
+.detail-header h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.workshop-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.workshop-info p {
+  font-size: 14px;
+}
+
+.registration-section {
+  margin: 30px 0;
+  padding: 20px;
+  background: #ecf0f1;
+  border-radius: 8px;
+}
+
+.registration-section h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.registration-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.registration-form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.registration-form button {
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.registration-form button:hover:not(:disabled) {
+  background: #229954;
+}
+
+.registration-form button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.registrations-section {
+  margin: 30px 0;
+}
+
+.registrations-section h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registrations-table thead {
+  background: #34495e;
+  color: white;
+}
+
+.registrations-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.registrations-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 14px;
+}
+
+.registrations-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.registrations-table.waitlist thead {
+  background: #d68910;
+}
+
+.text-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 5px;
+  transition: background 0.3s;
+}
+
+.text-button:hover {
+  background: #2980b9;
+}
+
+.cancel-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.cancel-button:hover {
+  background: #c0392b;
+}
+
+/* Schedule View */
+.schedule-view {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-view h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.participant-selector {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.participant-selector label {
+  font-weight: bold;
+}
+
+.participant-selector select {
+  padding: 8px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  min-width: 250px;
+}
+
+.participant-info {
+  margin: 20px 0;
+  padding: 15px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  border-left: 4px solid #3498db;
+}
+
+.participant-info h3 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.schedule-list h3 {
+  margin: 20px 0 15px 0;
+  color: #2c3e50;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.schedule-item {
+  background: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 4px solid #27ae60;
+}
+
+.schedule-item h4 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.schedule-item p {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.schedule-item button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+
+.schedule-item button:hover {
+  background: #2980b9;
+}
+
+/* Participant Form */
+.participant-form {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.participant-form h2 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.form-group input:disabled {
+  background: #ecf0f1;
+  cursor: not-allowed;
+}
+
+.participant-form button {
+  width: 100%;
+  padding: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.participant-form button:hover:not(:disabled) {
+  background: #229954;
+}
+
+.participant-form button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 10px;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-detail {
+    padding: 15px;
+  }
+
+  .registrations-table {
+    font-size: 12px;
+  }
+
+  .registrations-table th,
+  .registrations-table td {
+    padding: 8px;
+  }
+
+  .registration-form {
+    flex-direction: column;
+  }
+
+  .participant-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .participant-selector select {
+    width: 100%;
+    min-width: auto;
+  }
+}

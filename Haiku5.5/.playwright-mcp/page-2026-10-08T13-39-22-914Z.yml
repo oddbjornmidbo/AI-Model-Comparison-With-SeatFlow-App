@@ -1,0 +1,72 @@
+- main [ref=e3]:
+  - heading "SeatFlow" [level=1] [ref=e4]
+  - generic [ref=e5]:
+    - heading "Workshops" [level=2] [ref=e6]
+    - table [ref=e7]:
+      - rowgroup [ref=e8]:
+        - row [ref=e9]:
+          - columnheader "Title" [ref=e10]
+          - columnheader "When (UTC)" [ref=e11]
+          - columnheader "Capacity" [ref=e12]
+          - columnheader "Confirmed" [ref=e13]
+          - columnheader "Waitlisted" [ref=e14]
+          - columnheader "Remaining" [ref=e15]
+          - columnheader [ref=e16]
+      - rowgroup [ref=e17]:
+        - row [ref=e18]:
+          - cell "Domain-Driven Design in Practice" [ref=e19]
+          - cell "10 Nov 2026, 09:00 – 11:00" [ref=e20]
+          - cell "2" [ref=e21]
+          - cell "2" [ref=e22]
+          - cell "1" [ref=e23]
+          - cell "0" [ref=e24]
+          - cell [ref=e25]:
+            - button "Select" [ref=e26] [cursor=pointer]
+        - row [ref=e27]:
+          - cell "Event Sourcing Fundamentals" [ref=e28]
+          - cell "10 Nov 2026, 10:00 – 12:00" [ref=e29]
+          - cell "2" [ref=e30]
+          - cell "1" [ref=e31]
+          - cell "0" [ref=e32]
+          - cell "1" [ref=e33]
+          - cell [ref=e34]:
+            - button "Select" [ref=e35] [cursor=pointer]
+        - row [ref=e36]:
+          - cell "Testing Asynchronous Code" [ref=e37]
+          - cell "10 Nov 2026, 11:30 – 13:00" [ref=e38]
+          - cell "1" [ref=e39]
+          - cell "1" [ref=e40]
+          - cell "1" [ref=e41]
+          - cell "0" [ref=e42]
+          - cell [ref=e43]:
+            - button "Select" [ref=e44] [cursor=pointer]
+        - row [ref=e45]:
+          - cell "Accessible Frontends" [ref=e46]
+          - cell "10 Nov 2026, 13:00 – 15:00" [ref=e47]
+          - cell "3" [ref=e48]
+          - cell "0" [ref=e49]
+          - cell "0" [ref=e50]
+          - cell "3" [ref=e51]
+          - cell [ref=e52]:
+            - button "Select" [ref=e53] [cursor=pointer]
+        - row [ref=e54]:
+          - cell "Lightning Talks" [ref=e55]
+          - cell "10 Nov 2026, 15:00 – 16:00" [ref=e56]
+          - cell "10" [ref=e57]
+          - cell "0" [ref=e58]
+          - cell "0" [ref=e59]
+          - cell "10" [ref=e60]
+          - cell [ref=e61]:
+            - button "Select" [ref=e62] [cursor=pointer]
+  - generic [ref=e63]:
+    - heading "Participant schedule" [level=2] [ref=e64]
+    - generic [ref=e65]:
+      - text: Participant
+      - combobox "Participant" [ref=e66]:
+        - option "Choose…" [selected]
+        - option "Alice Hansen"
+        - option "Bjørn Olsen"
+        - option "Chen Wei"
+        - option "Dana Berg"
+        - option "Erik Lund"
+        - option "Fatima Yusuf"

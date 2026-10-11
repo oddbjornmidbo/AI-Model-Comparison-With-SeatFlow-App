@@ -1,0 +1,11 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { expect, fn, userEvent, within } from '@storybook/test';
+import { Feedback } from './Feedback';
+const meta = { title: 'Feedback/Message', component: Feedback, tags: ['autodocs'], args: { kind: 'success', children: <><strong>Seat reserved</strong><span>Sofia is confirmed for Building thoughtful design systems.</span></> } } satisfies Meta<typeof Feedback>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const Success: Story = {};
+export const Error: Story = { args: { kind: 'error', children: <><strong>A schedule conflict needs attention</strong><span>This participant already has a confirmed workshop at this time.</span></> } };
+export const RefreshFailedAfterSuccess: Story = { args: { kind: 'warning', children: <><strong>Registration saved; refresh needed</strong><span>The seat is reserved, but the latest roster could not be loaded. Refresh the workspace before making more changes.</span></> } };
+export const UncertainRetry: Story = { args: { kind: 'info', children: 'The connection was interrupted. Retry this registration to safely check its result.' } };
+export const Dismissible: Story = { args: { onDismiss: fn() }, play: async ({ canvasElement, args }) => { await userEvent.click(within(canvasElement).getByRole('button', { name: 'Dismiss message' })); await expect(args.onDismiss).toHaveBeenCalled(); } };
